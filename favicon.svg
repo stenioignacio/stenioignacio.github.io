@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="code favicon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00e5a0"/>
+      <stop offset="1" stop-color="#00b8ff"/>
+    </linearGradient>
+  </defs>
+  <rect rx="12" width="64" height="64" fill="#0d1117"/>
+  <rect rx="10" x="2" y="2" width="60" height="60" fill="url(#g)" opacity="0.06"/>
+  <g transform="translate(8,8)">
+    <rect x="0" y="0" width="48" height="48" rx="8" fill="#081018"/>
+    <g transform="translate(8,14)" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 12 L8 4"/>
+      <path d="M8 20 L0 12"/>
+      <path d="M32 4 L40 12"/>
+      <path d="M40 12 L32 20"/>
+      <path d="M12 24 L28 24" stroke-linecap="butt" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -402,8 +402,9 @@
     .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; align-items: start; }
     .cert-item { background: var(--bg3); border: 1px solid var(--border); border-radius: 12px; padding: 18px; display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center; transition: transform .18s, box-shadow .18s; }
     .cert-item:hover { transform: translateY(-4px); box-shadow: var(--glow); border-color: var(--accent); }
-    .cert-badge { width: 120px; height: 56px; display:flex; align-items:center; justify-content:center; background: linear-gradient(90deg, rgba(255,255,255,0.02), transparent); border-radius: 8px; }
-    .cert-badge img, .cert-badge svg { max-width: 100%; max-height: 100%; display:block; }
+    .cert-badge { width: 112px; height: 112px; display:flex; align-items:center; justify-content:center; }
+    .cert-badge img, .cert-badge svg { max-width: 100%; max-height: 100%; width:auto; height:auto; display:block; transition: transform .18s; }
+    .cert-item:hover .cert-badge img { transform: scale(1.06); }
     .cert-name { font-weight:700; color:var(--text); font-size: .95rem; }
 
     /* ── CONTACT ── */
@@ -1093,45 +1094,45 @@
       certifications: {
         en: `
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-cloud-architect.png" alt="Google Cloud Certified Professional Cloud Architect badge" loading="lazy"></div>
             <div class="cert-name">GCP Cloud Architect Professional</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-devops-engineer.png" alt="Google Cloud Certified Professional Cloud DevOps Engineer badge" loading="lazy"></div>
             <div class="cert-name">GCP Cloud DevOps Engineer Professional</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-associate-cloud-engineer.png" alt="Google Cloud Certified Associate Cloud Engineer badge" loading="lazy"></div>
             <div class="cert-name">GCP Cloud Engineer – Associate</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/aws-solutions-architect-associate.png" alt="AWS Certified Solutions Architect – Associate badge" loading="lazy"></div>
             <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/aws-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner badge" loading="lazy"></div>
             <div class="cert-name">AWS Certified Cloud Practitioner</div>
           </div>
         `,
         pt: `
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-cloud-architect.png" alt="Badge Google Cloud Certified Professional Cloud Architect" loading="lazy"></div>
             <div class="cert-name">GCP Cloud Architect Professional</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-devops-engineer.png" alt="Badge Google Cloud Certified Professional Cloud DevOps Engineer" loading="lazy"></div>
             <div class="cert-name">GCP Cloud DevOps Engineer Professional</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg" alt="Google Cloud logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/gcp-associate-cloud-engineer.png" alt="Badge Google Cloud Certified Associate Cloud Engineer" loading="lazy"></div>
             <div class="cert-name">GCP Cloud Engineer – Associate</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/aws-solutions-architect-associate.png" alt="Badge AWS Certified Solutions Architect – Associate" loading="lazy"></div>
             <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
           </div>
           <div class="cert-item">
-            <div class="cert-badge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS logo" loading="lazy"></div>
+            <div class="cert-badge"><img src="assets/badges/aws-cloud-practitioner.png" alt="Badge AWS Certified Cloud Practitioner" loading="lazy"></div>
             <div class="cert-name">AWS Certified Cloud Practitioner</div>
           </div>
         `
